@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ごるどー | 自己紹介</title>
+  <style>
+    :root{
+      --bg:#0b1220; --card:#111a2e; --text:#e8eefc; --muted:#a9b7d6;
+      --accent:#7aa2ff; --line:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(122,162,255,.18), transparent 50%),
+                  radial-gradient(900px 500px at 90% 30%, rgba(122,162,255,.12), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+    }
+    .wrap{max-width:980px; margin:0 auto; padding:36px 18px 64px;}
+    header{display:flex; gap:18px; align-items:center; margin-bottom:18px;}
+    .avatar img{
+      width: 100px; height:100px;object-fit:cover; border-radius:18px;
+      background: linear-gradient(135deg, rgba(122,162,255,.9), rgba(122,162,255,.2));
+      display:grid; place-items:center; font-weight:700; letter-spacing:.06em;
+      box-shadow: 0 20px 60px rgba(0,0,0,.35);
+      border: 1px solid var(--line);
+    }
+    h1{margin:0; font-size:26px;}
+    .tag{color:var(--muted); margin-top:6px; font-size:14px;}
+    nav{display:flex; gap:10px; flex-wrap:wrap; margin:18px 0 26px;}
+    a.btn{
+      text-decoration:none; color:var(--text);
+      border:1px solid var(--line); background: rgba(255,255,255,.03);
+      padding:10px 12px; border-radius:12px; font-size:14px;
+    }
+    a.btn:hover{border-color: rgba(122,162,255,.55);}
+    .grid{display:grid; grid-template-columns:1.1fr .9fr; gap:14px;}
+    @media (max-width: 820px){ .grid{grid-template-columns:1fr;} }
+    .card{
+      background: rgba(17,26,46,.85);
+      border: 1px solid var(--line);
+      border-radius:16px;
+      padding:16px;
+      box-shadow: 0 18px 60px rgba(0,0,0,.25);
+    }
+    h2{font-size:16px; margin:0 0 10px;}
+    p{margin:0; color:var(--muted); line-height:1.75;}
+    ul{margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.9;}
+    .kpi{display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin-top:12px;}
+    .mini{border:1px solid var(--line); border-radius:14px; padding:12px; background: rgba(255,255,255,.02);}
+    .mini b{display:block; color:var(--text); font-size:18px;}
+    footer{margin-top:18px; color:rgba(169,183,214,.75); font-size:12px;}
+    .accent{color:var(--accent);}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+<header>
+  <div class="avatar">
+    <img src="icon.png" alt="プロフィール画像">
+  </div>
+  <div>
+    <h1>かいと <span class="accent">（ごるどー）</span></h1>
+    <div class="tag">プログラマーじゃないなにか / コーヒーが癒し</div>
+  </div>
+</header>
+
+    <nav>
+      <a class="btn" href="#about">自己紹介</a>
+      <a class="btn" href="#works">やってること</a>
+      <a class="btn" href="#skills">好き・得意</a>
+      <a class="btn" href="#links">リンク</a>
+    </nav>
+
+    <div class="grid">
+      <section id="about" class="card">
+        <h2>👋 自己紹介</h2>
+        <p>
+          こんばんわ、<b style="color:var(--text)">ごるどー</b>です。<br />
+          一日100円ぐらい寄付チャレンジとサイト作ってVexチャレンジしてみたいサー<br />
+          例：Web制作/ゲーム/イラスト/音楽/プログラミング/動画編集…など。
+        </p>
+
+        <div class="kpi">
+          <div class="mini"><b>まんがよんだり</b><span style="color:var(--muted)">好きなこと</span></div>
+          <div class="mini"><b>いちにんまえ</b><span style="color:var(--muted)">最近の目標</span></div>
+          <div class="mini"><b>ちきゅう</b><span style="color:var(--muted)">活動場所</span></div>
+        </div>
+      </section>
+
+      <aside class="card">
+        <h2>🧩 プロフィール</h2>
+        <ul>
+          <li>住んでる地域：日本</li>
+          <li>好き：コーヒー / カフェイン</li>
+          <li>最近ハマってる：第五人格の闘牛士</li>
+          <li>連絡：SNSリンク（下に）</li>
+        </ul>
+      </aside>
+
+      <section id="works" class="card">
+        <h2>🛠 やってること（作品・活動）</h2>
+        <ul>
+          <li>作品1：これ（いろいろつくってみたい）</li>
+          <li>挑戦中：気合</li>
+        </ul>
+      </section>
+
+      <section id="skills" class="card">
+        <h2>⭐ 好き・得意</h2>
+        <ul>
+          <li>デザイン：なし</li>
+          <li>制作：なし</li>
+          <li>学習中：脆弱性</li>
+        </ul>
+      </section>
+
+      <section id="links" class="card" style="grid-column:1/-1;">
+        <h2>🔗 リンク</h2>
+        <nav style="margin:12px 0 0;">
+          <a class="btn" href="goludo_rekisu" target="_blank" rel="noopener">ディスコ</a>
+        </nav>
+      </section>
+    </div>
+
+    <footer style="margin-top:22px;">
+      © <span id="y"></span> ごるどー
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
